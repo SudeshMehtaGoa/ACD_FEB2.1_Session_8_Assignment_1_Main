@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Problem statment is not clear so creating form UI without bootstrap only using html5 and css -->
+        <title>Registration andLogin Form without using Bootstrap</title>
+        <link rel="stylesheet"href="style.css">
+   </head>
+    <body>
+        <!-- Form heading -->
+        <div>
+            <h1>Enter the system</h1>
+            <h4>It is necessary to login in Your account in order to sign up for a course.</h4>
+       </div>
+
+       <!-- Registration form -->
+       <!-- please note that form tag is not used since server side implemention is not required for this exercise -->
+       <div id="leftDiv" class="leftDivClass">
+           <h3>ARE YOU NEW? <span style="color: darkblue">REGISTER</span></h3>
+           <input type="text" id="userName" placeholder="User Name"></input>
+           <br>
+           <input type="text" id="userEmail" placeholder="User Email"></input>
+           <br>
+           <input type="password" id="userPassword" placeholder="Password"></input>
+           <br>
+           <input type="password" id="userConfirmPassword" placeholder="Confirm password"></input>
+           <br>
+           <button type="button" id="btnRegister" class="btnRegisterClass">Register</button>
+       </div>
+
+       <!-- login form -->
+       <!-- please note that form tag is not used since server side implemention is not required for this exercise -->
+       <div id="rightDiv"  class="rightDivClass">
+           <h3><span style="color: white">ALREADY A STUDENT? LOGIN</span></h3>
+           <input type="text" id="userLoginName" placeholder="User Name"></input>
+           <br>
+           <input type="password" id="userLoginPassword" placeholder="Password"></input>
+           <br>
+           <input type="checkbox" id="checkRememberMe" name="checkRememberMe" value="rememberme"><label for ="checkRememberMe" class="checkBoxLabelClass">Remember Me</label>
+           <button type="button" id="btnLogin" class="btnLoginClass">Login</button>
+           <div style="margin-top: 15px;margin-left:10px;">
+                <a href="#">Forgot Password?</a>
+            </div>
+       </div>
+    </body>
+</html>
+
